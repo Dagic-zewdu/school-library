@@ -12,11 +12,6 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 
 A basic understanding of Ruby and Git
 
-### Usage
-
-1. Install Ruby
-2. Clone this repo `https://github.com/Dagic-zewdu/school-library.git`
-
 ## Authors
 
 👤 **Dagic-zewdu**
