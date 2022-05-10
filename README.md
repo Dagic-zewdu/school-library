@@ -18,7 +18,7 @@
 
 - Run git clone on this project at the desired directory:
   ```
-  git clone https://github.com/elassis/OOP_library.git
+  https://github.com/Dagic-zewdu/school-library
   ```
 - Go to the cloned directory with `cd OOP_library`.
 - Install dependencies with bundle i.
