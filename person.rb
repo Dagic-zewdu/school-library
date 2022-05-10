@@ -8,23 +8,23 @@ class Person
     @parent_permission = parent_permission
   end
 
-  def getId
+  def getid
     @id
   end
 
-  def getName
+  def getname
     @name
   end
 
-  def getAge
+  def getage
     @age
   end
 
-  def setName=(data)
+  def setname=(data)
     @name = data
   end
 
-  def setAge=(data)
+  def setage=(data)
     @age = data
   end
 
