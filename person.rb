@@ -1,5 +1,6 @@
 class Person
-  attr_reader :rentals, :name, :id, :age, :parent_permission
+   attr_accessor :name, :age 
+   attr_reader :id
 
   def initialize(age:, name: 'unknown', parent_permission: true, id: 0)
     @id = id.zero? ? rand(1...100) : id
@@ -8,28 +9,8 @@ class Person
     @parent_permission = parent_permission
   end
 
-  def getid
-    @id
-  end
-
-  def getname
-    @name
-  end
-
-  def getage
-    @age
-  end
-
-  def setname=(data)
-    @name = data
-  end
-
-  def setage=(data)
-    @age = data
-  end
-
   def can_use_services?
-    of_age? || @parent_permission == true
+    of_age  || @parent_permission 
   end
 
   # private methods
