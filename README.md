@@ -1,21 +1,36 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# school-library
+# Library System using Ruby and OOP
 
-Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow you to:
+> This project is about creating a Library System that saves users and books and users can borrow books.
+
+## Built With
+
+- Ruby
 
 ## Getting Started
 
-\*\*Please follow the steps below to setup this project in your local computer
-
 ### Prerequisites
 
-A basic understanding of Ruby and Git
+- Ruby >= 3.0.0
+
+### Setup
+
+- Run git clone on this project at the desired directory:
+  ```
+  https://github.com/Dagic-zewdu/school-library
+  ```
+- Go to the cloned directory with `cd OOP_library`.
+- Install dependencies with bundle i.
 
 ### Usage
 
-1. Install Ruby
-2. Clone this repo `https://github.com/Dagic-zewdu/school-library.git`
+- With Ruby installed in your environment, you can just run `ruby main.rb` to run the program.
+
+### Run tests
+
+- You need Rspec installed. If not, do it with `gem install rspec`.
+- To run the tests with `rspec spec`.
 
 ## Authors
 
@@ -25,12 +40,14 @@ A basic understanding of Ruby and Git
 - LinkedIn: [LinkedIn](https://www.linkedin.com/dagic-zewdu/)
 - Twitter: [Twitter](https://twitter.com/dagic4)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/rtonata88/school-library/issues).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
