@@ -1,11 +1,14 @@
+require './nameable'
+
 class Person
   attr_accessor :name, :age
   attr_reader :id
 
-  def initialize(age:, name: 'unknown', parent_permission: true, id: 0)
+  def initialize(age, name: 'unknown', parent_permission: true, id: 0)
     @id = id.zero? ? rand(1...100) : id
     @name = name
     @age = age
+    @corrector = Nameable.new
     @parent_permission = parent_permission
   end
 
@@ -13,6 +16,9 @@ class Person
     of_age || @parent_permission
   end
 
+  def correct_name
+    @name = @corrector.correct_name(@name)
+  end
   # private methods
 
   private
