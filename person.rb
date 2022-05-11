@@ -1,29 +1,26 @@
-require './nameable'
+require 'nameable'
 
-class Person
+class Person < Nameable
   attr_accessor :name, :age
-  attr_reader :id
+  attr_reader :id, :rentals
 
-  def initialize(age, name: 'unknown', parent_permission: true, id: 0)
-    @id = id.zero? ? rand(1...100) : id
+  def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
+    @id = @id = Random.rand(1..1000)
     @name = name
     @age = age
-    @corrector = Nameable.new
     @parent_permission = parent_permission
   end
 
+  def of_age?
+    @age > 18
+  end
+
   def can_use_services?
-    of_age || @parent_permission
+    is_of_age? || @parent_permission
   end
 
   def correct_name
-    @name = @corrector.correct_name(@name)
-  end
-  # private methods
-
-  private
-
-  def of_age?
-    @age >= 18
+    @name
   end
 end

@@ -1,7 +1,5 @@
-require './person'
-
 class Nameable
-  def correct_name(name)
-    name.capitalize[0, 10]
+  def correct_name
+    raise NotImplementedError, "#{self.class} hasn't implemented method '#{__method__}'"
   end
 end
