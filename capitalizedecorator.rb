@@ -1,3 +1,4 @@
+$LOAD_PATH << '.'
 require 'basedecorator'
 
 class CapitalizeDecorator < BaseDecorator

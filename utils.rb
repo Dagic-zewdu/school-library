@@ -1,4 +1,4 @@
-module Main
+module Utils
   def self.print_prompt
     puts '
           Please choose an option by entering a number:
