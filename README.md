@@ -20,12 +20,14 @@
   ```
   https://github.com/Dagic-zewdu/school-library
   ```
-- Go to the cloned directory with `cd OOP_library`.
+- Go to the cloned directory with `cd school-library`.
 - Install dependencies with bundle i.
 
 ### Usage
 
-- With Ruby installed in your environment, you can just run `ruby main.rb` to run the program.
+- Run `bundle install` to get the dependencies.
+- Run `irb` to start interactive Ruby CLI.
+- Load different classes and start playing with them :)
 
 ### Run tests
 
